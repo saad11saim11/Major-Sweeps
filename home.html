@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A Chance To Win</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="top-nav">
+                <div class="home-logo">
+                    <a href="index.html"><img src="images/Logo.png" alt="Logo"></a>
+                </div>
+                <div class="menu">
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                        <div class="overlay-content">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">WINNERS</a></li>
+                                <li><a href="#">BLOGS</a></li>
+                                <li><a href="#">SWEEPS</a></li>
+                                <li class="btn-signup"><a href="#">SIGN UP</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <span class="open" onclick="openNav()">&#9776;</span>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!--  Content Section Start Here  -->
+    <section class="home-content">
+        <div class="container">
+            <div class="chance">
+                <h1>A Chance To Win</h1>
+                <img src="images/lottery_ticket-rendered-1 4.png" alt="">
+                <h3 class="mobile-heading">It’s free — enter Now </h3>
+                <a href="enter-mail.html" class="chance-btn">CLICK HERE</a>
+                <h3 class="mobile-heading-congr">Congratulations to the latest winner of our $12,000 Grand Prize, <a href="#"> Sheilah G. of Ohio!</a></h3>
+                <h2>Entries for the $12,000 prize close on june 30th 2020!</h2>
+                <h3 class="pc-heading-congr">Congratulations to the latest winner of our $12,000 Grand Prize, <a href="#"> Sheilah G. of Ohio!</a></h3>
+            </div>
+            <div class="free-mail">
+                <form>
+                    <h3>It’s free — enter Now</h3>
+                    <div class="fname">
+                        <input type="text" placeholder="First Name">
+                    </div>
+                    <div class="lname">
+                        <input type="text" placeholder="Last Name">
+                    </div>
+                    <div class="clear"></div>
+
+                    <div class="email">
+                        <input type="text" placeholder="Email">
+                    </div>
+                    <div class="phone">
+                        <input type="number" placeholder="Phone Number">
+                    </div>
+                    <div class="clear"></div>
+
+                    <div class="address">
+                        <input type="text" id="f-width" placeholder="Address">
+                    </div>
+                    <div class="zip-code">
+                        <input type="number" placeholder="Zip Code">
+                    </div>
+
+                    <div class="new-city">
+                        <input type="text" id="new-city" placeholder="City">
+                    </div>
+                    <div class="state">
+                        <input type="text" id="f-width" placeholder="State">
+                    </div>
+
+                    <div class="clear"></div>
+                    <!--
+                    Jquery
+                -->
+
+                    <div class="birthday">
+                        <label for="">Date of Birth:</label>
+                        <select id="month" name="month">
+                            <option value="01">1</option> 
+                            <option value="02">2</option>
+                            <option value="03">3</option>
+                            <option value="04">4</option>
+                            <option value="05">5</option>
+                            <option value="06" selected>6</option>
+                            <option value="07">7</option>
+                            <option value="08">8</option>
+                            <option value="09">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                    </select>
+
+                        <select id="day" name="day">
+                        <option value="01">1</option>
+                        <option value="02">2</option>
+                        <option value="03">3</option>
+                        <option value="04">4</option>
+                        <option value="05">5</option>
+                        <option value="06" selected>6</option>
+                        <option value="07">7</option>
+                        <option value="08">8</option>
+                        <option value="09">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+
+                        <select id="year" name="year">
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2015">2016</option>
+                        <option value="2015">2017</option>
+                        <option value="2015">2018</option>
+                        <option value="2015">2019</option>
+                        <option value="2015">2020</option>
+                    </select>
+                    </div>
+
+                    <!--
+                    Jquey End
+                -->
+                    <label for="" id="gender">Select Gender:</label>
+                    <span id="male" class="btn-male active">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 6C7.29 6 8.5 6.41 9.47 7.11L14.58 2H10V0H18V8H16V3.41L10.89 8.5C11.59 9.5 12 10.7 12 12C12 13.5913 11.3679 15.1174 10.2426 16.2426C9.11742 17.3679 7.5913 18 6 18C4.4087 18 2.88258 17.3679 1.75736 16.2426C0.632141 15.1174 0 13.5913 0 12C0 10.4087 0.632141 8.88258 1.75736 7.75736C2.88258 6.63214 4.4087 6 6 6ZM6 8C4.93913 8 3.92172 8.42143 3.17157 9.17157C2.42143 9.92172 2 10.9391 2 12C2 13.0609 2.42143 14.0783 3.17157 14.8284C3.92172 15.5786 4.93913 16 6 16C7.06087 16 8.07828 15.5786 8.82843 14.8284C9.57857 14.0783 10 13.0609 10 12C10 10.9391 9.57857 9.92172 8.82843 9.17157C8.07828 8.42143 7.06087 8 6 8Z" fill="#999999"/>
+                        </svg> Male
+                </span>
+                    <span id="female" class="btn-female">
+                    <svg width="12" height="18" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 0C7.5913 0 9.11742 0.632141 10.2426 1.75736C11.3679 2.88258 12 4.4087 12 6C12 8.97 9.84 11.44 7 11.92V14H9V16H7V18H5V16H3V14H5V11.92C2.16 11.44 0 8.97 0 6C0 4.4087 0.632141 2.88258 1.75736 1.75736C2.88258 0.632141 4.4087 0 6 0ZM6 2C4.93913 2 3.92172 2.42143 3.17157 3.17157C2.42143 3.92172 2 4.93913 2 6C2 7.06087 2.42143 8.07828 3.17157 8.82843C3.92172 9.57857 4.93913 10 6 10C7.06087 10 8.07828 9.57857 8.82843 8.82843C9.57857 8.07828 10 7.06087 10 6C10 4.93913 9.57857 3.92172 8.82843 3.17157C8.07828 2.42143 7.06087 2 6 2Z" fill="#999999"/>
+                        </svg> Female
+                </span>
+                    <br>
+                    <div class="box">
+                        <input type="checkbox">
+                        <label id="check-box">By checking this box, you agree to our Terms of Service and Privacy Policy as well as our Official Rules and agree to receive daily newsletters and promotions via email from MajorSweeps and LivingLargeSweeps.</label>
+                        <div class="clear"></div>
+                    </div>
+                    <br>
+                    <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </section>
+    <!--  Coneten Section End Here  -->
+
+    <!-- Footer Start here -->
+    <footer>
+        <div class="container">
+            <div class="ft-social">
+                <ul>
+                    <li><a href="#">Official Rules</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Winners</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">CA Residents-Do Not Sell Info</a></li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>Copyright© 2013-2020 SBG Media Inc. All Rights Reserved</p>
+                <p>NO PURCHASE NECESSARY TO ENTER OR WIN. PURCHASE WILL NOT INCREASE THE ODDS OF WINNING. Our general Sweepstakes are open to legal residents of the United States, the District of Columbia, who are living in the United States and the District
+                    of Columbia and who are at least 18 years of age. Our Grand Prize Sweepstakes are void in FLORIDA, NEW YORK, PUERTO RICO and where otherwise prohibited by law. Winners are responsible for all taxes associated with prizes. Odds of winning
+                    depend on the number of entries received during the sweepstakes period. Illustrations do not imply endorsement by the manufacturers or owners of third party marks. For alternative method of entry, <a href="#" class="ft-link"> click here</a>.
+                    Sweepstakes ends on 06/30/2020.</p>
+            </div>
+        </div>
+    </footer>
+    <!--  Footer End  -->
+
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+
+        $(function() {
+            $('#txtDate').datepicker({
+                onClose: function(dateText, inst) {
+                    $('#year').val(dateText.split('/')[2]);
+                    $('#month').val(dateText.split('/')[0]);
+                    $('#day').val(dateText.split('/')[1]);
+                }
+            });
+        });
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".btn-male").click(function() {
+                $(".btn-male").addClass("active");
+                $(".btn-female").removeClass("active");
+            });
+
+            $(".btn-female").click(function() {
+                $(".btn-female").addClass("active");
+                $(".btn-male").removeClass("active");
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>

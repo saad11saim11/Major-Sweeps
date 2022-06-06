@@ -1,0 +1,1371 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+
+/*******          ********/
+
+
+/******************* ******************/
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.clear {
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1230px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+header {
+    background: #1A237E;
+    margin-bottom: 40px;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-inner .offer {
+    margin-left: 220px;
+}
+
+.header-inner .logo img,
+.offer img {
+    width: 100%;
+}
+
+header h1,
+.banner h2 {
+    text-align: center;
+    font-size: 24px;
+    margin: 0;
+}
+
+.full-degree-inner {
+    border-top: 1px solid #cccccc;
+    margin: 40px 0 0 0;
+}
+
+.left-col {
+    float: left;
+    max-width: 4%;
+    width: 100%;
+    padding-top: 45px;
+}
+
+.right-col svg {
+    margin-bottom: -3px;
+    margin-right: 12px;
+}
+
+.right-col {
+    width: 100%;
+    max-width: 96%;
+    padding-top: 45px;
+    float: left;
+}
+
+.full-degree .right-col h3 {
+    font-size: 20px;
+    margin: 0;
+    color: #000000;
+    text-align: left;
+}
+
+.full-degree .right-col .button-wrap span.yes,
+span.no {
+    box-sizing: border-box;
+    border: 1px solid #CCCCCC;
+    border-radius: 77px;
+    color: #999999;
+    padding: 5px 9px;
+    background: rgba(153, 153, 153, 0.2);
+}
+
+.full-degree .right-col .button-wrap span.yes:hover {
+    border: 1px solid #43A047;
+    color: #43A047;
+    background: rgba(67, 160, 71, 0.2);
+    cursor: pointer;
+}
+
+.full-degree .right-col .button-wrap span.yes:hover svg path {
+    fill: #43A047;
+}
+
+.button-wrap span:nth-child(1) {
+    color: #43A047;
+    background: rgba(67, 160, 71, 0.1);
+    margin-right: 8px;
+}
+
+
+/* for js */
+
+.button-wrap .btn-green {
+    border: 1px solid #43A047 !important;
+    color: #43A047 !important;
+}
+
+.btn-green svg path {
+    fill: #43A047;
+}
+
+
+/* js end*/
+
+.full-degree .right-col .button-wrap span.no:hover {
+    border: 1px solid #D32F2F;
+    color: #D32F2F;
+    background: rgba(211, 47, 47, 0.2);
+    cursor: pointer;
+}
+
+.full-degree .right-col .button-wrap span.no:hover svg path {
+    fill: #D32F2F;
+}
+
+.btn-unactive {
+    border: 1px solid #CCCCCC !important;
+    /* border-radius: 77px; */
+    color: #999999 !important;
+}
+
+
+/* for JS */
+
+.button-wrap .no-btn-red {
+    border: 1px solid #D32F2F !important;
+    background: rgba(211, 47, 47, 0.2) !important;
+    color: #D32F2F !important;
+}
+
+.no-btn-red svg path {
+    fill: #D32F2F;
+}
+
+
+/* js end */
+
+.job {
+    display: none;
+}
+
+.right-col .job {
+    padding-top: 35px;
+}
+
+.right-col .job-title {
+    display: flex;
+}
+
+.job .job-title select {
+    background-image: url("../images/down-arrow.png");
+    background-repeat: no-repeat;
+    background-position: 250px;
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 11px 200px 11px 15px;
+    margin-left: 16px;
+    color: #999999;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+.job-title select:focus {
+    outline: none;
+}
+
+.job-title form svg {
+    margin: 0 0 0 -30px;
+}
+
+.right-col .job p {
+    color: #cccccc;
+}
+
+.content .full-degree:last-child .full-degree-inner {
+    margin-bottom: 40px;
+    padding-bottom: 45px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.btn-wrap {
+    text-align: center;
+}
+
+.btn-wrap a {
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 20px;
+    background: #43A047;
+    border-radius: 4px;
+    padding: 10px 173px;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+.progess-bar {
+    text-align: right;
+    color: #ffffff;
+    background: #66BB6A;
+}
+
+.progess-bar-inner {
+    padding: 10px 0;
+    background: #43A047;
+}
+
+.progess-bar-inner span {
+    margin-right: -90px;
+}
+
+.new-banner {
+    display: none;
+}
+
+.job-title-2 {
+    display: block !important;
+}
+
+.mobile-form {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #222222;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 450px;
+    margin-top: 15px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background: #c7c2c26b;
+}
+
+.btn-more {
+    display: none;
+}
+
+.mobile-text {
+    display: none;
+}
+
+
+/* 
+    Home Page New Start
+*/
+
+.top-nav {
+    padding: 19px 0px;
+}
+
+.home-logo {
+    float: left;
+    max-width: 20%;
+    width: 100%;
+}
+
+.home-logo a {
+    display: inline-block;
+}
+
+.home-logo img {
+    width: 84%;
+}
+
+.menu {
+    float: left;
+    margin: 0 auto;
+    max-width: 80%;
+    width: 100%;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.menu ul li {
+    display: inline-block;
+}
+
+.menu ul li a {
+    border: 1px solid transparent;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 4px 16px;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    opacity: 0.7;
+    transition: all ease-in 1ms;
+}
+
+.menu .btn-signup a {
+    border-radius: 5px;
+    background: #43A047;
+    font-weight: 700;
+    padding: 10px 16px;
+}
+
+.closebtn,
+.open {
+    display: none;
+}
+
+.home-content {
+    background: url('../images/coins.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -40px;
+}
+
+.chance,
+.free-mail {
+    float: left;
+    max-width: 50%;
+    width: 100%;
+    padding: 0px 90px;
+    text-align: center;
+}
+
+.home-chance h1,
+.chance h1,
+.free-mail h3 {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 44px;
+    text-align: center;
+    color: #FDD835;
+}
+
+.free-mail h3 {
+    font-size: 32px;
+}
+
+.home-chance h2,
+h3,
+.chance h2,
+h3 {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-top: 32px;
+}
+
+.mobile-heading,
+.mobile-heading-congr {
+    display: none;
+}
+
+.chance-btn {
+    display: none;
+}
+
+.home-chance h2,
+.chance h2 {
+    border: 1px solid #304FFE;
+    padding-bottom: 25px;
+    text-align: center;
+    border-width: 0 0 2px 0;
+}
+
+.chance img {
+    width: 100%;
+}
+
+.home-chance a,
+.chance a {
+    color: #FDD835;
+}
+
+.free-mail {
+    padding: 0px 0px 35px 10px;
+}
+
+.free-mail .fname,
+.city,
+.zip-code {
+    float: left;
+    margin-right: 8px;
+}
+
+.free-mail .email {
+    margin-right: 8px;
+    float: left;
+}
+
+.free-mail form {
+    max-width: 420px;
+    width: 100%;
+    /* margin: 0 auto; */
+    margin: 0 0px 0px auto;
+}
+
+.fname,
+.email {
+    width: 48%;
+}
+
+.lname,
+.phone {
+    float: right;
+    width: 48%;
+}
+
+input[type="text"],
+input[type="number"] {
+    background-color: #eaeef1;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    max-width: 206px;
+    width: 100%;
+}
+
+#f-width {
+    max-width: 100%;
+    width: 100%;
+}
+
+.zip-code input[type="number"] {
+    max-width: 100px;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input#new-city {
+    width: 100%;
+    max-width: 312px;
+}
+
+.birthday {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.birthday label {
+    color: #fff;
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.birthday select {
+    background-image: url("../images/down-arrow.png");
+    background-repeat: no-repeat;
+    background-position: 70px;
+}
+
+select#day,
+#month,
+#year {
+    max-width: 95px;
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    padding: 10px 8px;
+    cursor: pointer;
+    border: none;
+    background-color: #eaeef1;
+    -webkit-appearance: none !important;
+}
+
+#month {
+    margin: 0px 8px 0 24px;
+}
+
+#day {
+    margin-right: 8px;
+}
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+
+label#check-box {
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 18px;
+    letter-spacing: -0.01em;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+#gender {
+    color: #fff;
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: -15px;
+    margin-right: 15px;
+}
+
+.btn-male,
+.btn-female {
+    color: #fff;
+    cursor: pointer;
+    background: rgba(153, 153, 153, 0.1);
+    border: 1px solid #999999;
+    box-sizing: border-box;
+    border-radius: 77px;
+    padding: 10px 28px;
+}
+
+#male {
+    margin-right: 8px;
+}
+
+#male:hover {
+    background: #43A047;
+    border: 1px solid #43A047;
+}
+
+#male:hover svg path {
+    fill: #fff;
+}
+
+#female:hover {
+    background: #43A047;
+    border: 1px solid #43A047;
+}
+
+#female:hover svg path {
+    fill: #fff;
+}
+
+span {
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+footer span {
+    margin-bottom: 0;
+}
+
+#male svg,
+#female svg {
+    margin-right: 14px;
+}
+
+.active svg path {
+    fill: #ffffff;
+}
+
+.active {
+    background: #43A047;
+    border: 1px solid #43A047;
+}
+
+.active svg path {
+    fill: #fff;
+}
+
+input[type="submit"] {
+    border-radius: 4px;
+    color: #fff;
+    margin-top: 20px;
+    border: none;
+    font-size: 20px;
+    padding: 16px 63px;
+    background: linear-gradient(to left, #FDD835 50%, #D32F2F 50%);
+    background-position: left bottom;
+    background-size: 201% 100%;
+    transition: all 1s ease-out;
+}
+
+input[type="submit"]:hover {
+    color: #D32F2F;
+    cursor: pointer;
+    background-position: right bottom;
+}
+
+.box {
+    text-align: center;
+}
+
+.box input[type="checkbox"] {
+    float: left;
+    width: 5%;
+    max-width: 20px;
+}
+
+.box label {
+    width: 90%;
+    float: left;
+    text-align: left;
+    margin-left: 12px;
+}
+
+
+/*  Footer  */
+
+footer {
+    background: #1A237E;
+}
+
+.ft-social {
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0px;
+    margin: 0 auto;
+}
+
+.ft-social ul li {
+    display: inline;
+    padding: 16px 10px;
+}
+
+.ft-social ul li a {
+    color: #fff;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: Roboto;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.ft-social ul li a:hover {
+    opacity: 0.5;
+}
+
+.ft-social ul li:after {
+    content: "|";
+    color: #ffffff38;
+    margin-left: 15px;
+}
+
+.ft-social ul li:nth-child(8)::after {
+    display: none;
+}
+
+.footer-bottom {
+    padding: 10px 0px;
+    text-align: center;
+    background: #0D123F;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 18px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.ft-link {
+    color: #fff;
+}
+
+
+/* 
+        Home Page New End
+    */
+
+
+/*
+            Home Desktop 
+        */
+
+.home-desktop-content {
+    background: url(../images/coins-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -40px;
+}
+
+.home-chance {
+    max-width: 100%;
+    width: 100%;
+    padding: 0px 90px;
+    text-align: center;
+}
+
+.chance-inner {
+    max-width: 50%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.home-chance img {
+    width: 100%;
+}
+
+.home-chance h2,
+h3 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-top: 32px;
+}
+
+.homed-chance-btn a {
+    border-radius: 4px;
+    margin-top: 20px;
+    border: none;
+    display: inline-block;
+    padding: 16px 63px;
+    background: linear-gradient(to left, #FDD835 50%, #D32F2F 50%);
+    background-position: left bottom;
+    background-size: 201% 100%;
+    color: #fff;
+    font-size: 20px;
+    transition: all 1s ease-out;
+}
+
+.homed-chance-btn a:hover {
+    color: #D32F2F;
+    cursor: pointer;
+    background-position: right bottom;
+}
+
+
+/*
+            Home Desktopl Page End
+        */
+
+
+/********     For Laptop Screen     ********/
+
+@media only screen and (max-width: 1199px) {
+    .ft-social {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        max-width: 922px;
+    }
+}
+
+
+/********     For Tablet Screen     ********/
+
+@media only screen and (max-width: 991px) {
+    .left-col {
+        max-width: 10%;
+        width: 100%;
+    }
+    .right-col {
+        width: 100%;
+        max-width: 90%;
+    }
+    /* new Home Page Css */
+    .chance {
+        max-width: 100%;
+        padding: 10px 150px;
+    }
+    .chance h1 {
+        font-size: 45px;
+    }
+    .free-mail {
+        max-width: 100%;
+        padding: 10px 150px;
+    }
+    .ft-social {
+        width: 100%;
+    }
+    .ft-social ul li {
+        padding: 16px 4px;
+    }
+    .ft-social ul li a {
+        font-size: 12px;
+    }
+    .ft-social ul li:after {
+        content: "|";
+        margin-left: 10px;
+    }
+    /* home desktop */
+    .chance-inner {
+        max-width: 70%;
+        padding: 20px 0;
+    }
+}
+
+
+/********     For Mobiles Screen     ********/
+
+@media only screen and (max-width: 767px) {
+    /* Old Page Css */
+    header {
+        margin-bottom: 0;
+    }
+    .header-inner .offer {
+        margin-left: 10px;
+    }
+    .new-banner {
+        padding: 15px 0;
+        background: #43A047;
+        float: left;
+        width: 100%;
+        display: block;
+        margin-bottom: 40px;
+    }
+    .new-banner ul {
+        padding: 0;
+        margin: 0;
+        float: left;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        list-style: none;
+    }
+    .new-banner ul li:nth-child(2) {
+        padding: 10px 10px;
+    }
+    .new-banner ul li i {
+        color: #ffffff;
+        color: green;
+        background: #fff;
+        padding: 14px;
+        border-radius: 50%;
+    }
+    .new-banner ul li h3 {
+        color: #ffffff;
+        margin: 0;
+        font-size: 12px;
+        display: inline-block;
+    }
+    .new-banner ul li img {
+        width: 100%;
+    }
+    .banner h2 {
+        font-size: 16px;
+    }
+    .full-degree .right-col h3 {
+        font-size: 16px;
+    }
+    p.mobile-text {
+        font-size: 14px;
+    }
+    .left-col {
+        max-width: 15%;
+        width: 100%;
+    }
+    .right-col {
+        width: 100%;
+        max-width: 85%;
+    }
+    .right-col .job-title {
+        display: block;
+    }
+    .right-col .job-title h3 {
+        margin-bottom: 20px;
+    }
+    .mobile-form {
+        display: block;
+        font-size: 12px;
+        color: #222222;
+    }
+    .job .job-title select {
+        margin-left: 0;
+        width: 100%;
+    }
+    input[type="text"] {
+        width: 300px;
+    }
+    .mobile-form input[type="radio"] {
+        margin: 10px 10px 10px 0px;
+    }
+    .btn-wrap a {
+        padding: 10px 45px;
+    }
+    *:focus {
+        outline: none;
+    }
+    .pc-text {
+        display: none;
+    }
+    .btn-more {
+        display: inline-block;
+    }
+    .mobile-text {
+        display: block;
+    }
+    .mobile-text {
+        margin-bottom: 0;
+    }
+    #more,
+    #more1,
+    #more2,
+    #more3,
+    #more4,
+    #more5 {
+        display: none;
+    }
+    .btn-more {
+        margin-bottom: 20px;
+    }
+    button#myBtn,
+    #myBtn1,
+    #myBtn2,
+    #myBtn3,
+    #myBtn4,
+    #myBtn5 {
+        color: #304ffe;
+        background: none;
+        border: none;
+        padding: 0;
+    }
+    /* more button*/
+    /* new page Home Page css */
+    .overlay {
+        background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%), #1A237E;
+        height: 100%;
+        left: 0;
+        overflow-x: hidden;
+        position: fixed;
+        transition: 0.5s;
+        top: 0;
+        width: 0;
+        z-index: 1;
+    }
+    .overlay-content {
+        margin-top: 30px;
+        position: relative;
+        text-align: center;
+        top: 15%;
+        width: 100%;
+    }
+    .overlay a {
+        color: #fff;
+        display: block;
+        font-size: 36px;
+        padding: 8px;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    .overlay a:hover,
+    .overlay a:focus {
+        color: #f1f1f1;
+    }
+    .overlay .closebtn {
+        font-size: 50px;
+        position: absolute;
+        right: 5px;
+        top: -10px;
+    }
+    .menu ul li {
+        display: block;
+        text-align: center;
+    }
+    .closebtn,
+    .open {
+        display: block;
+    }
+    .open {
+        color: #fff;
+        position: absolute;
+        right: 15px;
+        top: 11px;
+        font-size: 32px;
+    }
+    @media screen and (max-height: 450px) {
+        .overlay a {
+            font-size: 20px
+        }
+        .overlay .closebtn {
+            font-size: 40px;
+            right: 35px;
+            top: 15px;
+        }
+    }
+    .home-logo,
+    .menu {
+        max-width: 50%;
+    }
+    .home-logo img {
+        width: 100%;
+    }
+    .menu ul li {
+        padding: 10px 0;
+    }
+    .menu ul li a {
+        font-size: 20px;
+    }
+    .home-content {
+        background: url('../images/coin-smobile.jpg');
+        background-position: top;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: #1A237E;
+        margin-top: 1px;
+    }
+    .chance {
+        padding: 10px 0px;
+    }
+    .chance h1 {
+        font-size: 32px;
+        margin: 0px;
+    }
+    .chance img {
+        width: 80%;
+    }
+    .mobile-heading {
+        display: block;
+        font-size: 24px;
+        line-height: 22px;
+        text-align: center;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        border: none;
+    }
+    .chance h3 {
+        border: none;
+        margin: 0px;
+    }
+    .home-chance h2,
+    h3,
+    .chance h2,
+    h3 {
+        margin-top: 20px;
+    }
+    .chance-btn {
+        border-radius: 4px;
+        border: none;
+        padding: 16px 45px;
+        background: #D32F2F;
+        margin: 20px 0 32px 0;
+        display: inline-block;
+    }
+    a.chance-btn {
+        color: #fff;
+        font-size: 20px;
+    }
+    .free-mail {
+        display: none;
+    }
+    .mobile-heading-congr {
+        display: block;
+    }
+    h3.mobile-heading-congr {
+        padding: 20px 10px;
+        background: #43A047;
+        margin: 0;
+        font-size: 14px;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .ft-social ul li {
+        padding: 5px 0px;
+    }
+    .ft-social ul li:after {
+        margin-left: 5px;
+    }
+    /*
+    Enter Mail Page 
+*/
+    .mail-content {
+        background: #1A237E;
+        margin-top: 1px;
+    }
+    .enter-mail {
+        padding-top: 25px;
+        padding-bottom: 32px;
+    }
+    .enter-mail h1 {
+        font-size: 24px;
+        color: #FDD835;
+        line-height: 22px;
+        text-align: center;
+        margin: 0;
+    }
+    .enter-mail h2 {
+        font-size: 24px;
+        color: #FDD835;
+        line-height: 22px;
+        text-align: center;
+        line-height: 44px;
+        font-size: 32px;
+        margin: 0;
+    }
+    .enter-mail h3 {
+        font-size: 24px;
+        line-height: 22px;
+        text-align: center;
+        color: #FFFFFF;
+        margin: 16px 0 0 0;
+    }
+    .pc-heading-congr {
+        display: none;
+    }
+    .page-email {
+        margin-bottom: 20px;
+    }
+    .page-email input[type="text"] {
+        width: 100%;
+        max-width: 330px;
+    }
+    .box {
+        text-align: left;
+    }
+    .box input[type="checkbox"] {
+        float: left;
+        width: 20%;
+        max-width: 20px;
+    }
+    .box label {
+        float: left;
+        width: 80%;
+        margin-left: 12px;
+        font-size: 12px;
+        line-height: 18px;
+        color: rgba(255, 255, 255, 0.4);
+    }
+    .box label span {
+        color: #fff;
+        display: inline;
+    }
+    .continue-btn {
+        border-radius: 4px;
+        color: #fff;
+        margin-top: 20px;
+        border: none;
+        display: inline-block;
+        padding: 15px 50px;
+        background: #D32F2F;
+    }
+    .enter-mail form {
+        text-align: center;
+    }
+    /*
+    Enter Mail Page End
+*/
+    /* Detail Page */
+    .detail-content h1 {
+        text-align: center;
+    }
+    form {
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    .full-form input[type="text"],
+    input[type="number"] {
+        background: #FFFFFF;
+        border: 1px solid #CCCCCC;
+        box-sizing: border-box;
+        border-radius: 4px;
+        max-width: 800px;
+        width: 100%;
+    }
+    .full-form select#day,
+    #month,
+    #year {
+        max-width: 77px;
+    }
+    .full-form .birthday select {
+        background-position: 50px;
+    }
+    #month {
+        margin: 0px 5px 0 3px;
+    }
+    #day {
+        margin-right: 5px;
+    }
+    .full-form .btn-male,
+    .btn-female {
+        padding: 10px 17px;
+    }
+    #gender-detail,
+    #detail-date {
+        color: #000000;
+        font-family: Roboto;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .btn-male,
+    .btn-female {
+        color: #000;
+    }
+    .active {
+        color: #fff;
+    }
+    input#new-city {
+        width: 100%;
+        max-width: 312px;
+    }
+    label#check-box {
+        color: #999999;
+    }
+    .box input[type="checkbox"] {
+        width: 4%;
+    }
+    .full-form .box label {
+        width: 89%;
+    }
+    .full-form .box span {
+        color: #1A237E;
+    }
+    .zip-code {
+        max-width: 30%;
+        width: 100%;
+        float: left;
+    }
+    .zip-code input[type="number"] {
+        max-width: 100%;
+        float: left;
+    }
+    .new-city {
+        max-width: 67%;
+        width: 100%;
+        float: left;
+    }
+    input#new-city {
+        width: 100%;
+        max-width: 100%;
+    }
+    /* Detail Page End */
+    /* home desktop css*/
+    .home-desktop-content {
+        background: url(../images/coin-smobile.jpg);
+        background-position: top;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: #1A237E;
+        margin-top: 1px;
+    }
+    .home-desktop-content .home-chance {
+        max-width: 100%;
+        padding: 30px 0;
+    }
+    .chance-inner {
+        max-width: 100%;
+    }
+    .home-desktop-content h1 {
+        font-size: 32px;
+        margin: 0 0 10px 0;
+    }
+    .homed-chance-btn a {
+        padding: 16px 45px;
+    }
+    .home-desktop-content h3 {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 374px) {
+    .new-banner ul li:nth-child(2) {
+        padding: 10px 10px;
+        margin: 0px;
+    }
+    .new-banner ul li i {
+        padding: 10px;
+    }
+    .btn-more {
+        margin-left: 0px;
+    }
+    .right-col svg {
+        margin-bottom: -4px;
+        margin-right: 6px;
+    }
+    .full-degree .right-col .button-wrap span.yes,
+    span.no {
+        padding: 3px 6px;
+    }
+    input[type="text"] {
+        width: 230px;
+    }
+    .btn-more a {
+        font-size: 12px;
+    }
+    .page-email input[type="text"] {
+        width: 100%;
+        max-width: 330px;
+    }
+    /* detail page */
+    input#new-city {
+        width: 100%;
+        max-width: 182px;
+    }
+    /* form BD */
+    .full-form select#day,
+    #month,
+    #year {
+        max-width: 60px;
+        width: 100%;
+    }
+    .full-form .birthday select {
+        background-position: 40px;
+    }
+    .full-form .btn-male,
+    .btn-female {
+        padding: 10px 10px;
+    }
+    #male svg,
+    #female svg {
+        margin-right: 10px;
+    }
+    .btn-male,
+    .btn-female {
+        font-size: 14px;
+    }
+    .zip-code {
+        max-width: 30%;
+        width: 100%;
+        float: left;
+    }
+    .zip-code input[type="number"] {
+        max-width: 100%;
+        float: left;
+    }
+    .new-city {
+        max-width: 67%;
+        width: 100%;
+        float: left;
+    }
+    input#new-city {
+        width: 100%;
+        max-width: 100%;
+    }
+    /* detail page end */
+}
